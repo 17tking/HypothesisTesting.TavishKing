@@ -18,7 +18,7 @@ Your task is to conduct analyses that will answer your colleagues’ questions. 
    
 ### Analysis Plan
 #### Data Cleaning
-  - removing ages with <2 observations
+  - removing ages with <= 2 observations
   - center age to the easily intepretable minimum
   - dummy code Male as the baseline in the gender variable
 #### EDA
