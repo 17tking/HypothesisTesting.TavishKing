@@ -1,5 +1,7 @@
 # Alcohol Use and Delinquency - Hypothesis Testing
-This was the final project for my graduate level psychological statistics course during the 2024 Fall semester. Individually, we were given a data set to clean, conduct exploratory data analyses, develop hypotheses, and test our hypotheses using the content we had learned that semester. The instructor's goal was to have us be creative and thoughtful about the research questions we were given. Below were the project instructions.
+This was my final project for a **graduate-level psychological statistics course (Fall 2024)**. I independently cleaned and explored a dataset, developed hypotheses, and conducted statistical analyses using course concepts. The project emphasized **data wrangling**, **hypothesis testing**, and **exploratory data analysis (EDA)** while encouraging creativity in research questions.
+
+**Key words:** regression analyses, modeling, data cleaning, statistics, visualization, research, R
 
 ## Project Objective
 ### Instructions
@@ -7,7 +9,7 @@ Some of your other colleagues ask you to help analyze data about about delinquen
 
 Your task is to conduct analyses that will answer your colleagues’ questions. We have covered during this semester all the statistics and analysis approaches you will need to fully answer these questions. You should use concepts/analyses from throughout the semester to address the questions (e.g., descriptive statistics, graphs, confidence intervals, effect sizes, etc.). Additionally, you also need to write a memo to your colleagues that describes and interprets your results (you may need to create tables or construct figures to explain your results).
 
-### Data Set Used + Link to Codebook
+### Data Set Used + Codebook
 - [delinquency_data.dta](FINAL_PROJECT/delinquency_data.dta)
 - [Codebook](https://github.com/17tking/HypothesisTesting.TavishKing/blob/main/FINAL_PROJECT/Codebook%20for%20DelinquencyDrugs%20dataset.pdf)
   
@@ -18,12 +20,13 @@ Your task is to conduct analyses that will answer your colleagues’ questions. 
    
 ### Analysis Plan
 #### Data Cleaning
-  - removing ages with <= 2 observations
-  - center age to the easily intepretable minimum
-  - dummy code Male as the baseline in the gender variable
+- removing ages 12 and 20 due to low observations
+- center age to the easily intepretable minimum (13yrs)
+- dummy code Male as the baseline in the gender variable
 #### EDA
-  -  view selected variables' correlation with alcohol use (DV)
-  -  create histograms to analyze distribution of data
+- view selected variables' correlation with alcohol use (DV)
+- create histograms to analyze distribution of data
+#### Analysis
 - Linear Regression Analyses
 - Check Assumptions
 
@@ -33,10 +36,9 @@ Your task is to conduct analyses that will answer your colleagues’ questions. 
 - Predictors in the final model explained 58% of the variability in alcohol use
   
 ### Conclusions
-Greater low self-control is associated with a reduction in the number of alcohol units consumed. For hypothesis 2, our results supported this hypothesis. For hypothesis 3, the interaction effect between self-control and friend delinquency showed that individuals with greater self-control (moving backward on the plot) and friends with those who engage in high delinquent behavior (2 SD above the mean) are at the greatest risk of consuming alcohol. Residual vs. fitted (RVF) plot from our final model shows evidence of heteroskedasticity due to the funneling shape of the data points. Further analyses were done in R to determine if we run the risk of having biased standard errors and p-values. Using a Heteroskedastic Corrected Covariance Matrix, we compared our original models SE's and p-values to their corrected values and found no substantial differences that would change our original conclusions. (this one was for my own sanity and fun).
+Our analysis found that **lower self-control was linked to reduced alcohol consumption**, supporting Hypothesis 2. For Hypothesis 3, an interaction effect revealed that individuals with **high self-control and delinquent friends** (2 SD above the mean) had the greatest risk of alcohol use.
 
-### Final Thoughts
-Going forward, I would have preferred to model the data to account for the zero-inflated distributions. Unfortunately, steps to model a zero-inflated model were not covered in that semester. 
+A **residual vs. fitted (RVF) plot** indicated heteroskedasticity. To assess potential bias, we applied a **Heteroskedasticity-Corrected Covariance Matrix** in **R**, comparing original and corrected SEs and p-values. Results confirmed no meaningful differences, reinforcing our conclusions. (This analysis was done for my own curiosity and fun.)
 
 ## Relevant Skills Used
 - Hypothesis Testing
@@ -44,6 +46,7 @@ Going forward, I would have preferred to model the data to account for the zero-
 - Problem Solving
 - Data Cleaning & Manipulation
 - Exploratory Data Analysis (EDA)
+- Data Interpretation and Reporting
 - Statistical Modeling
 - R
 - STATA
