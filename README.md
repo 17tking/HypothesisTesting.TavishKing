@@ -20,7 +20,7 @@ Your task is to conduct analyses that will answer your colleagues’ questions. 
    
 ### Analysis Plan
 #### Data Cleaning
-- removing ages 12 and 20 due to low observations
+- removing ages 11 and 20 due to low observations
 - center age to the easily intepretable minimum (13yrs)
 - dummy code Male as the baseline in the gender variable
 #### EDA
