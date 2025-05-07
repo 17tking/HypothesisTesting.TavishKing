@@ -36,7 +36,7 @@ Your task is to conduct analyses that will answer your colleagues’ questions. 
 - Predictors in the final model explained 58% of the variability in alcohol use
   
 ### Conclusions
-Our analysis found that **lower self-control was linked to reduced alcohol consumption**. For Hypothesis 3, an interaction effect revealed that individuals with **high self-control and delinquent friends** (2 SD above the mean) had the greatest risk of alcohol use.
+Our analysis found that <sup>*(Hyp.1)*</sup>**lower self-control was linked to reduced alcohol consumption** and <sup>*(Hyp.2)*</sup>**greater friend delinquency was positively associated with alcohol use**. For Hypothesis 3, an interaction effect revealed that individuals with **high self-control and delinquent friends** (2 SD above the mean) had the greatest risk of alcohol use.
 
 A **residual vs. fitted (RVF) plot** indicated heteroskedasticity. To assess potential bias, we applied a **Heteroskedasticity-Corrected Covariance Matrix** in **R**, comparing original and corrected SEs and p-values. Results confirmed no meaningful differences, reinforcing our conclusions. (This analysis was done for my own curiosity and fun.)
 
